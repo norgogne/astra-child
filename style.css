@@ -220,7 +220,7 @@ P {margin-left:10px;}
 /* --- Effet fade-in sur le formulaire --- */
 .password-form-wrapper {
     opacity: 0;
-    animation: fadeInForm 4s ease-in-out forwards;
+    animation: fadeInForm 0.9s ease-in-out forwards;
 }
 
 /* effet fade-in */
@@ -236,4 +236,4 @@ P {margin-left:10px;}
 }
 /*fin effet fade-in */
 
-label {font-weight: 900;}
+label {font-weight:900;font-color:red !important;}
