@@ -1,0 +1,236 @@
+/**
+Theme Name: Astra Child
+Author: Didier DAVID
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+.center {text-align: center;}
+.bk1
+{
+	padding-left:5px;
+	background-color:#343DA4;
+	color:white;
+}
+
+;.site-primary-header-wrap {
+	background-image: url('http://localhost/wordpress/wp-content/uploads/2025/09/2-46753920_2186264044739805_5346841981207183360_o.jpg');
+}
+
+.fa-solid {
+	padding-right:8px !important;
+}
+
+.center {text-align:center;}
+.entry-title a {margin-left:10px;}
+.ast-button {margin-left:10px}
+
+.post-content
+{
+	background-color:white;
+	border-style:solid;
+	border-radius:15px;
+}
+
+P {margin-left:10px;}
+
+.ast-post-format-.blog-layout-4.ast-article-inner {
+    border: 1px solid black;
+}
+
+.ast-blog-single-element
+{margin-left:-20px !important;
+}
+
+#photo_parc > img{
+	border-radius:30px;
+}
+
+
+.pl20{padding-left:20px;}
+
+.mt50 {
+	margin-top:50px;
+}
+
+.ml10 {
+	margin-left:10px;
+}
+
+.widget_block
+{
+	background-color:white;
+	padding:5px;
+	border-style: solid;
+	border-radius: 0.7em;
+}
+
+.site-description {
+	font-size:x-large !important;
+	font-weight: bolder;
+	text-align:center;
+}
+
+/*paramétrage des blocs dans la side bar de droite */
+.wp-block-heading {
+	font-weight:bolder;
+	font-size:medium !important;
+	color:red;
+	text-align:center !important;
+	}
+
+.read-more {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.messagedefilant div span,
+.messagedefilant div:after {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  white-space: nowrap;
+  top:0;
+}
+
+.messagedefilant div:after {
+  position: absolute;
+  top:0; left:0;
+  content:attr(data-text);
+  animation: defilement2 10s infinite linear;
+}
+
+@keyframes defilement2 {
+  0% { margin-left: 100%; }
+  100% { margin-left: 0%; }
+}
+
+
+/* === STYLE FORMULAIRE PAGE PROTÉGÉE ASTRA === */
+
+/* Structure générale */
+.password-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+   }
+
+/* Bloc du formulaire */
+.post-password-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    background-color:#fff;
+    padding: 2rem 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Logo rond */
+.password-form-header .custom-logo {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px auto;}
+
+/* Texte de titre */
+.password-form-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Champ mot de passe */
+.password-input-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;}
+
+.password-input-container input[type="password"],
+.password-input-container input[type="text"] {
+    width: 100%;
+    padding: 10px 40px 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: lightgoldenrodyellow !important;
+}
+
+/* Bouton œil */
+.toggle-password-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: var(--ast-global-color-2, #0274be);
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-password-btn:hover {
+    background-color: var(--ast-global-color-1, #005fa3);
+}
+
+/* Bouton "Entrer" */
+.post-password-form input[type="submit"] {
+    background-color: var(--ast-global-color-2, #0274be);
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-password-form input[type="submit"]:hover {
+    background-color: var(--ast-global-color-1, #005fa3);
+}
+
+/* --- Effet fade-in sur le formulaire --- */
+.password-form-wrapper {
+    opacity: 0;
+    animation: fadeInForm 0.9s ease-in-out forwards;
+}
+
+/* effet fade-in */
+@keyframes fadeInForm {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*fin effet fade-in */
